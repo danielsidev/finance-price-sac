@@ -11,8 +11,7 @@ Modelo Matemático Utilizado
 [![Cálculo Tabela Price](https://wikimedia.org/api/rest_v1/media/math/render/svg/bc51f6f035b10c7426702dc9c4b7d2dceea3cdd1 "Cálculo Tabela Price")](http://https://wikimedia.org/api/rest_v1/media/math/render/svg/bc51f6f035b10c7426702dc9c4b7d2dceea3cdd1 "Cálculo Tabela Price")
 ### Equação para a metodologia  SAC
 
->** pmt = a + i &#42; ( PV - ( y * a ) )**
-
+[![Cálculo Tabela Price](https://www.renatrader.com.br/images/aprender/matematica-financeira/image038.gif "Cálculo Tabela Sac")](https://www.renatrader.com.br/images/aprender/matematica-financeira/image038.gif "Cálculo Tabela Sac")
 
 
 
@@ -26,7 +25,17 @@ PRICE
 	pmt .push( vP * ( Math.pow((1+i),n) * i ) / ( Math.pow((1+i),n) -1 ) );
 
 SAC
-	pmt.push( a + i * ( vP - ( y * a ) ) );
+  > amortização =  a = VP /n
+  > ( k - 1 ) x i  = é o período analisado que será abstraído tornando-se ( y )
+  > 1a parcela = a + i * VP
+  > 2a parcela = a + i * ( VP -  1 * a )
+  > 3a parcela = a + i * ( VP -  2 * a )
+  ...
+  Onde  y => É o número da parcela que já foi paga no loop FOR
+  A fórmula em javascript fica:
+  PMT = a + i * ( vP - ( y * a ) )
+  Como iremos contruir uma lista de prestações, então temos:
+  pmt.push( a + i * ( vP - ( y * a ) ) );
 ```
 
 Onde as variáveis representam:
