@@ -1,0 +1,29 @@
+{
+  "name": "finance-price-sac",
+  "version": "1.0.0",
+  "title":"Simulador de Financiamento",
+  "description": "Um Simulador de Financiamento utilizando as tabelas PRICE ou SAC.",
+  "main": "index.html",
+  "keywords": [
+    "Finanças",
+    "Financiamento",
+    "Price",
+    "SAC",
+    "Juros",
+    "Valor Presente",
+    "Taxa",
+    "Parcela",
+    "Prestação"
+  ],
+  "homepage": "",
+  "author": {
+    "name": "Daniel Mello Siqueira",
+    "email": "contato@danielsiqueira.net",
+    "url": "http://danielsiqueira.net"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^15.2.0",
+    "jquery": "^3.2.1"
+  }
+}

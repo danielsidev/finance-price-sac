@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simlador de Financiamento</title>
+    <link rel="stylesheet" href="assets/css/finance.css">
+
+  </head>
+  <body>
+    <h1>Simulador de Financiamento</h1>
+<form id="simulador" name="simulador" method="post">
+  <div class="campo"><span class="labelSimula">Valor Financiado:</span><input type="text" name="valor" id="valor" /> </div>
+  <div class="campo"><span class="labelSimula">Taxa de Juros(%) ao mês:</span><input type="text" name="taxa" id="taxa" /> </div>
+  <div class="campo"><span class="labelSimula">N&ordm; Parcelas ( em meses ):</span><input type="number" name="parcelas" id="parcelas" min="1" step="1" /> </div>
+<br style="clear:both;"/>
+
+    <button id="simular">Simular</button>
+
+    </form>
+<div id="resultado">
+
+</div>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
