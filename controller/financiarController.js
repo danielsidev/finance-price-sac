@@ -1,7 +1,5 @@
 "use strict"
-//let {financiar} = require("../model/financiar");
-
-class financiar{  //} extends financiar{
+class financiar{
     constructor(vP, i, n){
         this.pmt        = [];/* Prestação do Financiamento*/
         this.vP         = vP;/* Valor Presente(Valor do Financiamento) */
