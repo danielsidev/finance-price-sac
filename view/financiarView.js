@@ -9,7 +9,7 @@ $(function() {
     let valor    = $("#valor").val();//vP
     let taxa     = $("#taxa").val();//i
     let parcelas = $("#parcelas").val();//n
-     if((valor>0 || !isNaN(valor))  || (taxa>0 || !isNaN(taxa))   || (parcelas>0 || !isNaN(parcelas)) ){
+     if(parseFloat(valor) && parseFloat(taxa)>0    && parseInt(parcelas)>0 ){
 
         let simuladorA = new financiar(valor, taxa, parcelas);
             simuladorA.tratarMascaraReal();/* Remove a máscara de R$ */
